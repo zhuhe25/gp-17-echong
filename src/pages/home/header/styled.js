@@ -3,7 +3,10 @@ import styled from "styled-components";
 export const HeaderContainer = styled.div`
     padding-top:.5rem;
     height:2.08rem;
-    background:${props=>props.bgColor?props.bgColor:`rgba(255,255,255,1)`};
+    background:${props=>props.bgColor?props.bgColor:`rgba(255,255,255,.9)`};
+    position:fixed;
+    z-index:10;
+    width:7.5rem;
     .header_div-top{
         display:flex;
         justify-content:center;

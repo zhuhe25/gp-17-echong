@@ -1432,6 +1432,13 @@
     "@types/minimatch" "*"
     "@types/node" "*"
 
+"@types/http-proxy@^1.17.3":
+  version "1.17.3"
+  resolved "https://registry.npmjs.org/@types/http-proxy/-/http-proxy-1.17.3.tgz#348e1b808ff9585423cb909e9992d89ccdbf4c14"
+  integrity sha512-wIPqXANye5BbORbuh74exbwNzj+UWCwWyeEFJzUQ7Fq3W2NSAy+7x7nX1fgbEypr2/TdKqpeuxLnXWgzN533/Q==
+  dependencies:
+    "@types/node" "*"
+
 "@types/istanbul-lib-coverage@*", "@types/istanbul-lib-coverage@^2.0.0":
   version "2.0.1"
   resolved "https://registry.npmjs.org/@types/istanbul-lib-coverage/-/istanbul-lib-coverage-2.0.1.tgz#42995b446db9a48a11a07ec083499a860e9138ff"
@@ -2415,7 +2422,7 @@ braces@^2.3.1, braces@^2.3.2:
     split-string "^3.0.2"
     to-regex "^3.0.1"
 
-braces@~3.0.2:
+braces@^3.0.1, braces@~3.0.2:
   version "3.0.2"
   resolved "https://registry.npmjs.org/braces/-/braces-3.0.2.tgz#3454e1a462ee8d599e236df336cd9ea4f8afe107"
   integrity sha512-b8um+L1RzM3WDSzvhm6gIz1yfTbBt6YTlcEKAvsmqCZZFw46z626lVj9j1yEPW33H5H+lBQpZMP1k8l+78Ha0A==
@@ -3699,6 +3706,13 @@ dom-serializer@0:
   dependencies:
     domelementtype "^2.0.1"
     entities "^2.0.0"
+
+dom7@^2.1.3:
+  version "2.1.3"
+  resolved "https://registry.npmjs.org/dom7/-/dom7-2.1.3.tgz#a736f9c3bfbc4ca039a81cd095f97d1d7f3de19c"
+  integrity sha512-QTxHHDox+M6ZFz1zHPAHZKI3JOHY5iY4i9BK2uctlggxKQwRhO3q3HHFq1BKsT25Bm/ySSj70K6Wk/G4bs9rMQ==
+  dependencies:
+    ssr-window "^1.0.1"
 
 domain-browser@^1.1.1:
   version "1.2.0"
@@ -5104,7 +5118,18 @@ http-proxy-middleware@0.19.1:
     lodash "^4.17.11"
     micromatch "^3.1.10"
 
-http-proxy@^1.17.0:
+http-proxy-middleware@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.npmjs.org/http-proxy-middleware/-/http-proxy-middleware-1.0.3.tgz#f73daad8dac622d51fe1769960c914b9b1f75a72"
+  integrity sha512-GHvPeBD+A357zS5tHjzj6ISrVOjjCiy0I92bdyTJz0pNmIjFxO0NX/bX+xkGgnclKQE/5hHAB9JEQ7u9Pw4olg==
+  dependencies:
+    "@types/http-proxy" "^1.17.3"
+    http-proxy "^1.18.0"
+    is-glob "^4.0.1"
+    lodash "^4.17.15"
+    micromatch "^4.0.2"
+
+http-proxy@^1.17.0, http-proxy@^1.18.0:
   version "1.18.0"
   resolved "https://registry.npmjs.org/http-proxy/-/http-proxy-1.18.0.tgz#dbe55f63e75a347db7f3d99974f2692a314a6a3a"
   integrity sha512-84I2iJM/n1d4Hdgc6y2+qY5mDaz2PUVjlg9znE9byl+q0uC3DeByqBGReQu5tpLK0TAqTIXScRUV+dg7+bUPpQ==
@@ -6674,6 +6699,14 @@ micromatch@^3.1.10, micromatch@^3.1.4:
     snapdragon "^0.8.1"
     to-regex "^3.0.2"
 
+micromatch@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.npmjs.org/micromatch/-/micromatch-4.0.2.tgz#4fcb0999bf9fbc2fcbdd212f6d629b9a56c39259"
+  integrity sha512-y7FpHSbMUMoyPbYUSzO6PaZ6FyRnQOpHuKwbo1G+Knck95XVU4QAiKdGEnj5wwoS7PlOgthX/09u5iFJ+aYf5Q==
+  dependencies:
+    braces "^3.0.1"
+    picomatch "^2.0.5"
+
 miller-rabin@^4.0.0:
   version "4.0.1"
   resolved "https://registry.npmjs.org/miller-rabin/-/miller-rabin-4.0.1.tgz#f080351c865b0dc562a8462966daa53543c78a4d"
@@ -7549,7 +7582,7 @@ performance-now@^2.1.0:
   resolved "https://registry.npmjs.org/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
   integrity sha1-Ywn04OX6kT7BxpMHrjZLSzd8nns=
 
-picomatch@^2.0.4, picomatch@^2.0.7:
+picomatch@^2.0.4, picomatch@^2.0.5, picomatch@^2.0.7:
   version "2.2.1"
   resolved "https://registry.npmjs.org/picomatch/-/picomatch-2.2.1.tgz#21bac888b6ed8601f831ce7816e335bc779f0a4a"
   integrity sha512-ISBaA8xQNmwELC7eOjqFKMESB2VIqt4PPDD0nsS95b/9dZXvVKOlz9keMSnoGGKcOHXfTvDD6WMaRoSc9UuhRA==
@@ -8571,6 +8604,13 @@ react-app-rewired@^2.1.5:
   dependencies:
     semver "^5.6.0"
 
+react-awesome-swiper@^1.4.10:
+  version "1.4.10"
+  resolved "https://registry.npmjs.org/react-awesome-swiper/-/react-awesome-swiper-1.4.10.tgz#b9d8a3f90325b2d75bf3542feb831c39bed10e2f"
+  integrity sha512-eUbUcfexMK8B7b+2Z+aXb8t1XDPw1jXQFUSMIxdpWrh/EP7qn/FTh5XY0ZGBKi4QeEVv4UGQT2ndx2Qc6vAAuw==
+  dependencies:
+    swiper "^4.4.1"
+
 react-dev-utils@^10.2.0:
   version "10.2.0"
   resolved "https://registry.npmjs.org/react-dev-utils/-/react-dev-utils-10.2.0.tgz#b11cc48aa2be2502fb3c27a50d1dfa95cfa9dfe0"
@@ -8736,6 +8776,13 @@ react@^16.13.0:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
     prop-types "^15.6.2"
+
+reactjs-swiper@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.npmjs.org/reactjs-swiper/-/reactjs-swiper-0.1.0.tgz#38d2dbc4ffe896ecb7293643475555828ce080f1"
+  integrity sha1-ONLbxP/oluy3KTZDR1VVgozggPE=
+  dependencies:
+    swiper "^3.4.2"
 
 read-pkg-up@^2.0.0:
   version "2.0.0"
@@ -9670,6 +9717,11 @@ sshpk@^1.7.0:
     safer-buffer "^2.0.2"
     tweetnacl "~0.14.0"
 
+ssr-window@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/ssr-window/-/ssr-window-1.0.1.tgz#30752a6a4666e7767f0b7e6aa6fc2fdbd0d9b369"
+  integrity sha512-dgFqB+f00LJTEgb6UXhx0h+SrG50LJvti2yMKMqAgzfUmUXZrLSv2fjULF7AWGwK25EXu8+smLR3jYsJQChPsg==
+
 ssri@^6.0.1:
   version "6.0.1"
   resolved "https://registry.npmjs.org/ssri/-/ssri-6.0.1.tgz#2a3c41b28dd45b62b63676ecb74001265ae9edd8"
@@ -9980,6 +10032,19 @@ svgo@^1.0.0, svgo@^1.2.2:
     stable "^0.1.8"
     unquote "~1.1.1"
     util.promisify "~1.0.0"
+
+swiper@^3.4.2:
+  version "3.4.2"
+  resolved "https://registry.npmjs.org/swiper/-/swiper-3.4.2.tgz#39d6b410b1a39833e1f72d3b72999df5f5e38392"
+  integrity sha1-Oda0ELGjmDPh9y07cpmd9fXjg5I=
+
+swiper@^4.4.1:
+  version "4.5.1"
+  resolved "https://registry.npmjs.org/swiper/-/swiper-4.5.1.tgz#ed43998e780ceb478610079c8d23fd425eca636f"
+  integrity sha512-se6I7PWWu950NAMXXT+ENtF/6SVb8mPyO+bTfNxbQBILSeLqsYp3Ndap+YOA0EczOIUlea274PKejT6gKZDseA==
+  dependencies:
+    dom7 "^2.1.3"
+    ssr-window "^1.0.1"
 
 symbol-observable@^1.2.0:
   version "1.2.0"

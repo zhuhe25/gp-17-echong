@@ -1,10 +1,15 @@
 import React, { Component } from 'react'
 import { HeaderContainer } from "./styled"
 import BScrollCom from "@common/scroll"
+import { connect } from 'react-redux'
+import {mapStateToProps,mapDispatchToProps} from "../connect"
+@connect(mapStateToProps,mapDispatchToProps)
 class Header extends Component {
     render() {
+        let {menus,bgColor} = this.props;
+        console.log(menus)
         return (
-            <HeaderContainer>
+            <HeaderContainer bgColor={bgColor}>
                 {/* BEM
                     B:block  盒子
                     E:element   元素
@@ -24,13 +29,11 @@ class Header extends Component {
                 <div className="header_div-bottom">
                     <BScrollCom>
                         <ul>
-                            <li>进口狗粮</li>
-                            <li>进口狗粮</li>
-                            <li>进口狗粮</li>
-                            <li>进口狗粮</li>
-                            <li>进口狗粮</li>
-                            <li>进口狗粮</li>
-                            <li>进口狗粮</li>
+                            {
+                                menus.map((item)=>(
+                                <li key={item.param}>{item.name}</li>
+                                ))
+                            }
                         </ul>
                     </BScrollCom>
                 </div>
